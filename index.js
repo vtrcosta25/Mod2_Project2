@@ -61,9 +61,12 @@ const pokedex = [
   },
 ];
 
+let pokemon = undefined;
+
 // Rotas
 app.get("/", (req, res) => {
-  res.render("index", { pokedex });
+  // pokemon = undefined;
+  res.render("index", { pokedex, pokemon });
 });
 
 app.post("/create", (req, res) => {
@@ -73,13 +76,20 @@ app.post("/create", (req, res) => {
   res.redirect("/");
 });
 
-
-app.get("/update/:id", (req, res) => {
+app.get("/detalhes/:id", (req, res) => {
   const id = +req.params.id;
-  
-  const pokemon = pokedex.find(pokemon => pokemon.id === id);
-  res.send(pokemon)
-  res.render("index", {pokemon, pokedex});
+  pokemon = pokedex.find((pokemon) => pokemon.id === id);
+  res.redirect("/");
+}), 
+
+app.post("/update/:id", (req, res) => {
+  const id = +req.params.id - 1;
+  // pokemon = pokedex.find((pokemon) => pokemon.id === id);
+  const newPokemon = req.body
+  newPokemon.id = id + 1
+  pokedex[id] = newPokemon;
+  pokemon = undefined;
+  res.redirect("/");
 });
 
 app.listen(3000, () =>
