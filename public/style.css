@@ -4,17 +4,46 @@
     margin: 0;
     padding: 0;
     font-family: roboto, arial;
+    scroll-behavior: smooth;
 }
 
-header{
-    padding: 3rem;
-    background-color: red;
+nav{
+    /* padding: 1.5rem; */
+    background-color: #dc0a2d;
+    width: 100%; 
+    position: fixed;
+     z-index: 9999;
 }
 
-header h1{  
-    color: #fff;
-    font-size: 3rem;
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+   padding: 0.6rem;
+}
+
+nav img{
+    width: 20%;
     text-align: center;
+}
+
+nav h1{  
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+ }
+
+header img{
+    width: 100%;
 }
 
 main{
@@ -35,8 +64,8 @@ section#cards div.card{
     margin-top: 3rem 0 5rem 0;
 }
 
-section#cards div.card a{
-    width: 20%;
+section#cards div.card a#editar{
+    /* width: 20%; */
     padding: 0.7rem;
     display: flex;
     justify-content: center;
@@ -51,8 +80,31 @@ section#cards div.card a{
     margin-top: 1rem;
 }
 
-section#cards div.card a:hover{
+
+section#cards div.card a#apagar{
+    /* width: 20%; */
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: #fff;
+    border: solid 1px #dc0a2d;
+    color: #dc0a2d;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+section#cards div.card a#editar:hover{
     background-color: rgb(38, 0, 253);
+    color: #fff
+}
+
+
+section#cards div.card a#apagar:hover{
+    background-color: #dc0a2d;
     color: #fff
 }
 
@@ -62,7 +114,7 @@ section#cards h2{
 }
 
 section#cards div.card img{
-    width: 100%;
+    width: 75%;
 }
 
 section#cards div.card h3{
@@ -80,7 +132,7 @@ section#cadastro{
 }
 
 section#cadastro img{
-    width: 100%;
+    width: 80%;
 }
 
 section#cadastro h2{
@@ -126,3 +178,24 @@ section#cadastro form button:hover{
     color: #fff
 }
 
+footer{
+    background-color: #dc0a2d;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer p{
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+footer p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
