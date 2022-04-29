@@ -11,7 +11,7 @@ nav{
     background-color: #dc0a2d;
     width: 100%; 
     position: fixed;
-     z-index: 9999;
+    z-index: 1;
 }
 
 nav ul{
@@ -72,7 +72,6 @@ section#cards div.card{
 }
 
 section#cards div.card a#editar{
-    /* width: 20%; */
     padding: 0.7rem;
     display: flex;
     justify-content: center;
@@ -89,7 +88,6 @@ section#cards div.card a#editar{
 
 
 section#cards div.card a#apagar{
-    /* width: 20%; */
     padding: 0.7rem;
     display: flex;
     justify-content: center;
