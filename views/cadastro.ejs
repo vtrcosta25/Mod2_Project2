@@ -42,7 +42,7 @@
             <form action="/create" method="post">
     
               <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required>
+              <input type="text" id="nome" name="nome" >
     
               <label for="descricao">Descrição:</label>
               <input type="text" id="descricao" name="descricao" required>
@@ -65,7 +65,7 @@
               <label for="habilidade">Habilidade:</label>
               <input type="text" id="habilidade" name="habilidade" required>
     
-              <button id="buttoncadastrar" type="submit">Cadastrar</button>
+              <button id="buttoncadastrar" type="submit" onclick="alerta()">Cadastrar</button>
               
             </form>
         </div>
@@ -78,5 +78,6 @@
       <p>Dados exportados de <a href="https://www.pokemon.com/br/pokedex/">Pokédex</a></p>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

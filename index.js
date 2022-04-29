@@ -78,7 +78,7 @@ app.post("/create", (req, res) => {
   const pokemon = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
-  res.redirect("/");
+  setTimeout(() => { res.redirect("/"); }, 5000);
 });
 
 app.get("/detalhes/:id", (req, res) => {
