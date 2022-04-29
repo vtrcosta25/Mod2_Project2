@@ -80,8 +80,8 @@ app.post("/create", (req, res) => {
 app.get("/detalhes/:id", (req, res) => {
   const id = +req.params.id;
   pokemon = pokedex.find((pokemon) => pokemon.id === id);
-  res.redirect("/");
-}), 
+  res.redirect("/cadastro");
+});
 
 app.post("/update/:id", (req, res) => {
   const id = +req.params.id - 1;
@@ -96,8 +96,8 @@ app.get("/delete/:id", (req, res) => {
   const id = +req.params.id - 1;
   delete pokedex[id]
   res.redirect("/#cards");
-}), 
+});
 
-app.listen(3000, () =>
-  console.log("Servidor rodando em http://localhost:3000")
+app.listen(port, () =>
+  console.log(`Servidor rodando em http://localhost:${port}`)
 );
