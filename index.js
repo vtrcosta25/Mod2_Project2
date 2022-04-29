@@ -80,7 +80,7 @@ app.post("/create", (req, res) => {
 app.get("/detalhes/:id", (req, res) => {
   const id = +req.params.id;
   pokemon = pokedex.find((pokemon) => pokemon.id === id);
-  res.redirect("/cadastro");
+  res.redirect("/#cadastro");
 });
 
 app.post("/update/:id", (req, res) => {
