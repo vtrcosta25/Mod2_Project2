@@ -71,6 +71,14 @@ section#cards div.card{
     margin-top: 3rem 0 5rem 0;
 }
 
+.redirect {
+    width: 80%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 section#cards div.card a#editar{
     padding: 0.7rem;
     display: flex;

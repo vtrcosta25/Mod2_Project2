@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Pokémon</title>
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li><img src="/img/pokebola.png" alt="Pokebola"></li>
+        <div id="conteiner">
+          <li><a href="/"><h1>Pokédex</h1></a></li>
+          <li><a href="/cadastro"> Cadastro </a></li>
+          <li><a href="/#cards"> Pokemons </a></li>
+        </div>
+      </ul>
+
+    </nav>
+
+    <header>
+      <img src="/img/banner.jpg" alt="banner">
+    </header>
+
+    <main>
+
+      <section id="cadastro">
+
+
+        <img src="/img/pokedex.png" alt="Pokedex">
+
+        <div>
+              <h2>Atualização do Pokemon</h2>
+    
+            <form action="/update/<%= pokemon.id %>" method="post">
+    
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" value="<%= pokemon.nome %>" />
+    
+              <label for="descricao">Descrição:</label>
+              <input type="text" id="descricao" name="descricao" value="<%= pokemon.descricao %>" />
+    
+              <label for="tipo">Tipo:</label>
+              <input type="text" id="tipo" name="tipo" value="<%= pokemon.tipo %>" />
+    
+              <label for="imagem">Link da Imagem</label>
+              <input type="text" id="imagem" name="imagem" value="<%= pokemon.imagem %>" />
+    
+              <label for="peso">Peso:</label>
+              <input type="text" id="peso" name="peso" value="<%= pokemon.peso %>" />
+    
+              <label for="altura">Altura:</label>
+              <input type="text" id="altura" name="altura" value="<%= pokemon.altura %>" />
+    
+              <label for="categoria">Categoria:</label>
+              <input type="text" id="categoria" name="categoria" value="<%= pokemon.categoria %>" />
+    
+              <label for="habilidade">Habilidade:</label>
+              <input type="text" id="habilidade" name="habilidade" value="<%= pokemon.habilidade %>" />
+    
+              <button id="buttonatualizar" type="submit">Atualizar</button>
+    
+            </form>
+
+        </div>
+
+        </section>
+    </main>
+
+    <footer>
+      <p>Criado por Victor Rodrigues para fins educativos &copy;</p>
+      <p>Dados exportados de <a href="https://www.pokemon.com/br/pokedex/">Pokédex</a></p>
+    </footer>
+
+  </body>
+</html>
