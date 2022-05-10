@@ -1,5 +1,5 @@
 {
-  "name": "mod2_project2",
+  "name": "pokedex-postgresSQL",
   "version": "1.0.0",
   "description": "Projeto MVC de uma pokedex",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vtrcosta25/Mod2_Project2.git"
+    "url": "git+https://github.com/vtrcosta25/pokedex-postgresSQL.git"
   },
   "author": "Victor Rodrigues",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vtrcosta25/Mod2_Project2/issues"
+    "url": "https://github.com/vtrcosta25/pokedex-postgresSQL/issues"
   },
-  "homepage": "https://github.com/vtrcosta25/Mod2_Project2#readme",
+  "homepage": "https://github.com/vtrcosta25/pokedex-postgresSQL#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "ejs": "^3.1.7",
